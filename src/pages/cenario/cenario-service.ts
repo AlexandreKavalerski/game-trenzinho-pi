@@ -12,7 +12,7 @@ export class CenariosService {
     }
 
     all(): Observable<[Cenario]> {
-        return this.http.get('htpp://localhost:3000/cenarios')
+        return this.http.get('http://localhost:3000/cenarios')
             .map(response => response.json() as Cenario[]);
     }
 
