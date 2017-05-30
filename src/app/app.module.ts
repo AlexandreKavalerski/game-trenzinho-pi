@@ -7,6 +7,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { GamePage } from '../pages/game/game.component';
+import { CenarioPage } from '../pages/cenario/cenario.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,7 +19,8 @@ import { CenariosService } from '../pages/cenario/cenario-service';
     MyApp,
     HomePage,
     ListPage,
-    GamePage
+    GamePage,
+    CenarioPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { CenariosService } from '../pages/cenario/cenario-service';
     MyApp,
     HomePage,
     ListPage,
-    GamePage
+    GamePage,
+    CenarioPage
   ],
   providers: [
     CenariosService,

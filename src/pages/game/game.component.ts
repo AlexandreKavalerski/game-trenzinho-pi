@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 
 import { Cenario } from '../cenario/cenario';
 import { CenariosService } from '../cenario/cenario-service';
+import { CenarioPage } from '../cenario/cenario.component';
 
 @Component({
     templateUrl: 'game.component.html',
@@ -16,18 +17,18 @@ export class GamePage {
 
     }
 
-    ionViewDidLoad(){
+    ionViewDidLoad() {
         this.getCenarios();
     }
 
-    getCenarios(){
+    getCenarios() {
         this.cenariosService.all().subscribe(
             cenarios => this.cenarios = cenarios
         );
     }
 
-
-
-
+    toCenario(id: number) {
+        this.navCtrl.push(CenarioPage, {id: id});
+    }
 
 }

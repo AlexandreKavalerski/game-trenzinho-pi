@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { Cenario } from './cenario';
+import { NavParams } from 'ionic-angular';
 
+import { Cenario } from './cenario';
 import { Palavra } from '../palavra/palavra';
 import { Letra } from '../letra/letra';
 
@@ -12,15 +12,17 @@ import { CenariosService } from './cenario-service';
 })
 export class CenarioPage {
     public cenario: Cenario;
-    constructor(public navCtrl: NavController, public cenariosService: CenariosService) {
+    constructor(private cenariosService: CenariosService, private navParams: NavParams) {
+        
 
     }
     
     ionViewDidLoad(){
-        this.getCenarioById();
+        let idCenario = this.navParams.get('id');
+        this.getCenarioById(idCenario);
     }
 
-    getCenarioById(id: number = 1){
+    getCenarioById(id: number){
         this.cenariosService.find(id).subscribe(
             cenario => this.cenario = cenario
         );
