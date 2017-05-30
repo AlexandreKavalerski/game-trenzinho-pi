@@ -23,14 +23,16 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Jogar', component: GamePage },
-      { title: 'List', component: ListPage }
+      {title: 'Jogar', component: GamePage},
+      {title: 'Estatísticas', component: ListPage},
+      {title: 'Sair', component: ListPage}
     ];
 
   }
 
   initializeApp() {
     this.platform.ready().then(() => {
+
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
