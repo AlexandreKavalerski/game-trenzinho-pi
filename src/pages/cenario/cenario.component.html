@@ -3,6 +3,8 @@
     <ion-title *ngIf="cenario">{{cenario.titulo}}</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content>
-  <h3>OK</h3>
+<ion-content *ngIf="cenario">
+	<h2>{{cenario.palavra.nome}}</h2>
+	
+	<img [src]="cenario.pathImgGuardiao">
 </ion-content>
