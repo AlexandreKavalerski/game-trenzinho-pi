@@ -1,0 +1,18 @@
+.letra{
+    max-height: 80%;
+    max-width: 60%;
+    margin: 18px 0;
+}
+button{
+    .img-letra{
+        margin-right: 50px;
+    }
+
+    .correto{
+        border: 0px
+    }
+    .selecionado{
+        border: 5px solid red
+    }
+}
+

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+
+
 import { Cenario } from '../cenario/cenario';
 import { CenariosService } from '../cenario/cenario-service';
 import { CenarioPage } from '../cenario/cenario.component';
@@ -13,8 +15,10 @@ import { CenarioPage } from '../cenario/cenario.component';
 })
 export class GamePage {
     public cenarios: Cenario[];
-    constructor(public navCtrl: NavController, public cenariosService: CenariosService) {
-
+    constructor(public navCtrl: NavController, 
+        public cenariosService: CenariosService) 
+    {
+        
     }
 
     ionViewDidLoad() {
@@ -30,5 +34,4 @@ export class GamePage {
     toCenario(id: number) {
         this.navCtrl.push(CenarioPage, {id: id});
     }
-
 }

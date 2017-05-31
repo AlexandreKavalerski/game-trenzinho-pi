@@ -25,7 +25,7 @@ export class MyApp {
     this.pages = [
       {title: 'Jogar', component: GamePage, iconName: "game-controller-b"},
       {title: 'Estatísticas', component: ListPage, iconName: "stats"},
-      {title: 'Sair', component: ListPage, iconName: "undo"}
+      {title: 'Sair', component: HomePage, iconName: "undo"}
     ];
 
   }

@@ -4,7 +4,15 @@
   </ion-navbar>
 </ion-header>
 <ion-content *ngIf="cenario">
-	<h2>{{cenario.palavra.nome}}</h2>
-	
-	<img [src]="cenario.pathImgGuardiao">
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4 class="left" *ngIf="cenario" [dragula]="'bloco'" [dragulaModel]="cenario.palavra.letras">
+          <button class="letra" ion-item *ngFor="let letra of cenario.palavra.letras" detail-none>
+            <img class="img-letra" [src]="letra.pathImgLetra"/>
+          </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
