@@ -27456,13 +27456,15 @@ ion-navbar.toolbar {
 }
 
 .letra {
-  max-height: 80%;
-  max-width: 60%;
+  max-height: 80px;
+  max-width: 60px;
   margin: 18px 0;
+  background: transparent;
 }
 
 button .img-letra {
-  margin-right: 50px;
+  max-height: inherit;
+  max-width: inherit;
 }
 
 button .correto {
@@ -27471,6 +27473,18 @@ button .correto {
 
 button .selecionado {
   border: 5px solid red;
+}
+
+#vagoes {
+  background-color: blue;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 90px;
+}
+
+#letras {
+  margin: 10px auto 0 30px;
 }
 
 .cenarios .toolbar-background {

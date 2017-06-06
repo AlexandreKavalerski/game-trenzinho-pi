@@ -13,8 +13,7 @@ import { CenariosService } from './cenario-service';
     templateUrl: 'cenario.component.html'
 })
 export class CenarioPage {
-    arr1: Array<string> = [];
-    arr2: Array<string> = [];
+    letrasCenario = [];
     corretos = [];
 
     public cenario: Cenario;
@@ -23,37 +22,35 @@ export class CenarioPage {
         private navParams: NavParams,
         public alertCtrl: AlertController,
         private dragulaService: DragulaService) {
-        for (let i = 0; i < 20; i++) {
-            this.arr2.push("2. [" + i + "]");
-        }
+
         this.dragulaService.drag.subscribe((valor) => {
-            if(this.corretos.indexOf(valor[1]) == -1){
+            if (this.corretos.indexOf(valor[1]) == -1) {
                 valor[1].classList.add("selecionado");
                 console.log(valor[1].classList);
 
-            }else{
+            } else {
                 let alerta = this.alertCtrl.create({
                     title: "Item já preenchido!",
                     subTitle: "Parabains",
                     buttons: ["OK"]
                 }).present();
             }
-            
+
 
         });
 
 
-        this.dragulaService.drop.subscribe((valor) => {
+        // this.dragulaService.drop.subscribe((valor) => {
 
-            valor[1].classList.remove("selecionado");
-            valor[1].classList.add("correto");
-            this.corretos.push(valor[1]);
-                let alerta = this.alertCtrl.create({
-                    title: "Item arrastado!",
-                    subTitle: "Parabains",
-                    buttons: ["Sair"]
-                }).present();
-        });
+        //     valor[1].classList.remove("selecionado");
+        //     valor[1].classList.add("correto");
+        //     this.corretos.push(valor[1]);
+        //     let alerta = this.alertCtrl.create({
+        //         title: "Item arrastado!",
+        //         subTitle: "Parabains",
+        //         buttons: ["Sair", "Ficar"]
+        //     }).present();
+        // });
 
     }
 
@@ -64,8 +61,20 @@ export class CenarioPage {
 
     getCenarioById(id: number) {
         this.cenariosService.find(id).subscribe(
-            cenario => this.cenario = cenario
+            cenario => {
+                this.cenario = cenario;
+                this.fillLetrasCenario(this.cenario.palavra.letras, this.cenario.letrasAleatorias);
+                console.log(this.letrasCenario);
+            }
         );
+    }
+    fillLetrasCenario(letrasPalavra, letrasAleatorias) {
+        for (let letra of letrasPalavra) {
+            this.letrasCenario.push(letra);
+        }
+        for (let letra of letrasAleatorias) {
+            this.letrasCenario.push(letra);
+        }
     }
 
 }

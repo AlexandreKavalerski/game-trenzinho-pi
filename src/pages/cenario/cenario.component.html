@@ -3,16 +3,19 @@
     <ion-title *ngIf="cenario">{{cenario.titulo}}</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content *ngIf="cenario">
-  
-  <ion-grid>
-    <ion-row>
-      <ion-col col-4 class="left" *ngIf="cenario" [dragula]="'bloco'" [dragulaModel]="cenario.palavra.letras">
-          <button class="letra" ion-item *ngFor="let letra of cenario.palavra.letras" detail-none>
-            <img class="img-letra" [src]="letra.pathImgLetra"/>
-          </button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+<ion-content *ngIf="cenario" [ngStyle]="{'background-image': 'url(' + cenario.pathImgCenario + ')', 'background-repeat':'no-repeat', 'background-position':'center'}">
+
+  <div id="letras" *ngIf="letrasCenario" [dragula]="'bloco'" [dragulaModel]="letrasCenario" >
+    <button class="letra" *ngFor="let letra of letrasCenario" detail-none>
+      <img class="img-letra" [src]="letra.pathImgLetra"/>
+    </button>
+  </div>
+
+  <div id="vagoes">
+    <div [dragula]="'bloco'">
+
+    </div>
+  </div>
+
 
 </ion-content>
