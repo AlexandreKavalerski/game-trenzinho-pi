@@ -27476,15 +27476,17 @@ button .selecionado {
 }
 
 #vagoes {
-  background-color: blue;
+  background-image: url("../../../assets/imagens/vagao-trenzinho-pi.png");
+  background-size: 80px 60px;
   position: absolute;
+  margin-left: 150px;
   bottom: 0px;
-  width: 100%;
-  height: 90px;
+  width: 48%;
+  height: 60px;
 }
 
 #letras {
-  margin: 10px auto 0 30px;
+  margin: 60px auto 0 30px;
 }
 
 .cenarios .toolbar-background {
