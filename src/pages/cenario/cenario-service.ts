@@ -20,21 +20,21 @@ export class CenariosService {
             "praia-tubarao.jpg",
             new Palavra("COCO", 
                 [
-                    new Letra("C", "c.png", "c.mp3", 3),
-                    new Letra("O", "o.png", "o.mp3", 15),
-                    new Letra("C", "c.png", "c.mp3", 3),
-                    new Letra("O", "o.png", "o.mp3", 15)
+                    new Letra("C", "C.png", "c.mp3", 3),
+                    new Letra("O", "O.png", "o.mp3", 15),
+                    new Letra("C", "C.png", "c.mp3", 3),
+                    new Letra("O", "O.png", "o.mp3", 15)
                 ],
                 "coco.png",
                 "coco.mp3",
                 1),
             [
-                new Letra("G", "g.png", "g.mp3", 7),
-                new Letra("X", "x.png", "x.mp3", 24),
-                new Letra("B", "b.png", "b.mp3", 2),
-                new Letra("A", "a.png", "a.mp3", 1),
-                new Letra("P", "p.png", "p.mp3", 16),
-                new Letra("L", "l.png", "l.mp3", 12)
+                new Letra("G", "G.png", "g.mp3", 7),
+                new Letra("X", "X.png", "x.mp3", 24),
+                new Letra("B", "B.png", "b.mp3", 2),
+                new Letra("A", "A.png", "a.mp3", 1),
+                new Letra("P", "P.png", "p.mp3", 16),
+                new Letra("L", "L.png", "l.mp3", 12)
             ],
             1
             ),
@@ -45,23 +45,23 @@ export class CenariosService {
             "casa-gata.png",
             new Palavra("BANANA", 
                 [
-                    new Letra("B", "b.png", "b.mp3", 2),
-                    new Letra("A", "a.png", "a.mp3", 1),
-                    new Letra("N", "n.png", "n.mp3", 14),
-                    new Letra("A", "a.png", "a.mp3", 1),
-                    new Letra("N", "n.png", "n.mp3", 14),
-                    new Letra("A", "a.png", "a.mp3", 1),
+                    new Letra("B", "B.png", "b.mp3", 2),
+                    new Letra("A", "A.png", "a.mp3", 1),
+                    new Letra("N", "N.png", "n.mp3", 14),
+                    new Letra("A", "A.png", "a.mp3", 1),
+                    new Letra("N", "N.png", "n.mp3", 14),
+                    new Letra("A", "A.png", "a.mp3", 1),
                 ],
                 "banana.png",
                 "banana.mp3",
                 2),
             [
-                new Letra("G", "g.png", "g.mp3", 7),
-                new Letra("X", "x.png", "x.mp3", 24),
-                new Letra("B", "b.png", "b.mp3", 2),
-                new Letra("A", "a.png", "a.mp3", 1),
-                new Letra("P", "p.png", "p.mp3", 16),
-                new Letra("L", "l.png", "l.mp3", 12)
+                new Letra("G", "G.png", "g.mp3", 7),
+                new Letra("X", "X.png", "x.mp3", 24),
+                new Letra("B", "B.png", "b.mp3", 2),
+                new Letra("A", "A.png", "a.mp3", 1),
+                new Letra("P", "P.png", "p.mp3", 16),
+                new Letra("L", "L.png", "l.mp3", 12)
             ],
             2
             )

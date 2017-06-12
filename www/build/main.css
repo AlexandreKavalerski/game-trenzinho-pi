@@ -27462,6 +27462,13 @@ ion-navbar.toolbar {
   background: transparent;
 }
 
+.letra-vagao {
+  max-height: 80px;
+  max-width: 60px;
+  margin: 0;
+  background: transparent;
+}
+
 button .img-letra {
   max-height: inherit;
   max-width: inherit;
@@ -27475,14 +27482,18 @@ button .selecionado {
   border: 5px solid red;
 }
 
-#vagoes {
-  background-image: url("assets/img/vagao-trenzinho-pi.png");
-  background-size: 80px 60px;
-  position: absolute;
-  margin-left: 150px;
-  bottom: 0px;
-  width: 48%;
-  height: 60px;
+.vagoes {
+  background-image: url("../assets/img/vagao.png");
+  background-repeat: no-repeat;
+  background-size: 110px 120px;
+  display: inline-block;
+  width: 110px;
+  height: 120px;
+  padding-left: 25px;
+}
+
+#letras + div {
+  margin-left: 60px !important;
 }
 
 #letras {

@@ -5,15 +5,25 @@
 </ion-header>
 <ion-content *ngIf="cenario" [ngStyle]="{'background-image': 'url(assets/img/' + cenario.imgCenario + ')', 'background-repeat':'no-repeat', 'background-position':'center'}">
 
-  <div id="letras" *ngIf="letrasCenario" [dragula]="'bloco'" [dragulaModel]="letrasCenario" >
-    <button class="letra" *ngFor="let letra of letrasCenario" detail-none>
+  <div id="letras" *ngIf="letrasCenario" [dragula]="'bloco'" [dragulaModel]="letrasCenario">
+    <button class="letra" [id]="letra.letra" *ngFor="let letra of letrasCenario" detail-none>
       <img class="img-letra" [src]="'assets/img/letras/' + letra.imgLetra"/>
     </button>
   </div>
 
-  <div id="vagoes" [dragula]="'bloco'">
-    
+  <div id="vagao-C" class="vagoes" [dragula]="'bloco'">
+
   </div>
+  <div id="vagao-O" class="vagoes" [dragula]="'bloco'">
+
+  </div>
+  <div id="vagao-C" class="vagoes" [dragula]="'bloco'">
+
+  </div>
+  <div id="vagao-O" class="vagoes" [dragula]="'bloco'">
+
+  </div>
+
 
 
 </ion-content>
