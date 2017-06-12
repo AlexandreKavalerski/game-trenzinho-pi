@@ -8,7 +8,7 @@
 
   <ion-slides pager *ngIf="cenarios">
     <ion-slide *ngFor="let cenario of cenarios">
-      <img [src]="cenario.pathImgCenario" class="slide-image" (click)="toCenario(cenario.id)" />
+      <img [src]="'assets/img/' + cenario.imgCenario" class="slide-image" (click)="toCenario(cenario.id)" />
       <h2 class="cenario-titulo" [innerHTML]="cenario.titulo"></h2>
       <p [innerHTML]="cenario.descricao"></p>
     </ion-slide>

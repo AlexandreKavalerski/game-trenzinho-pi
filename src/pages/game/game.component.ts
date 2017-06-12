@@ -26,9 +26,7 @@ export class GamePage {
     }
 
     getCenarios() {
-        this.cenariosService.all().subscribe(
-            cenarios => this.cenarios = cenarios
-        );
+        this.cenarios = this.cenariosService.all();
     }
 
     toCenario(id: number) {

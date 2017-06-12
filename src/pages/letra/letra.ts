@@ -1,13 +1,13 @@
 export class Letra{
     public id: number;
     public letra:string;
-    public pathImgLetra:string;
-    public pathSomLetra:string;
+    public imgLetra:string;
+    public somLetra:string;
 
-    constructor(letra: string, pathImgLetra: string, pathSomLetra: string, id?: number){
+    constructor(letra: string, imgLetra: string, somLetra: string, id?: number){
         this.letra = letra;
-        this.pathImgLetra = pathImgLetra;
-        this.pathSomLetra = pathSomLetra;
+        this.imgLetra = imgLetra;
+        this.somLetra = somLetra;
         if(id){
             this.id = id;
         }

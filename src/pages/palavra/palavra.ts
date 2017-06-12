@@ -3,14 +3,14 @@ export class Palavra {
     public id: number;
     public nome: string;
     public letras: Letra[];
-    public pathImgPalavra: string;
-    public pathSomPalavra: string;
+    public imgPalavra: string;
+    public somPalavra: string;
 
-    constructor(nome: string, letras: Letra[], pathImgPalavra: string, pathSomPalavra: string, id?: number) {
+    constructor(nome: string, letras: Letra[], imgPalavra: string, somPalavra: string, id?: number) {
         this.nome = nome;
         this.letras = letras;
-        this.pathImgPalavra = pathImgPalavra;
-        this.pathSomPalavra = pathSomPalavra;
+        this.imgPalavra = imgPalavra;
+        this.somPalavra = somPalavra;
         if (id) {
             this.id = id;
         }

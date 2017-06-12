@@ -3,11 +3,11 @@
     <ion-title *ngIf="cenario">{{cenario.titulo}}</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content *ngIf="cenario" [ngStyle]="{'background-image': 'url(' + cenario.pathImgCenario + ')', 'background-repeat':'no-repeat', 'background-position':'center'}">
+<ion-content *ngIf="cenario" [ngStyle]="{'background-image': 'url(assets/img/' + cenario.imgCenario + ')', 'background-repeat':'no-repeat', 'background-position':'center'}">
 
   <div id="letras" *ngIf="letrasCenario" [dragula]="'bloco'" [dragulaModel]="letrasCenario" >
     <button class="letra" *ngFor="let letra of letrasCenario" detail-none>
-      <img class="img-letra" [src]="letra.pathImgLetra"/>
+      <img class="img-letra" [src]="'assets/img/letras/' + letra.imgLetra"/>
     </button>
   </div>
 

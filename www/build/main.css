@@ -27476,7 +27476,7 @@ button .selecionado {
 }
 
 #vagoes {
-  background-image: url("../../../assets/imagens/vagao-trenzinho-pi.png");
+  background-image: url("assets/img/vagao-trenzinho-pi.png");
   background-size: 80px 60px;
   position: absolute;
   margin-left: 150px;
