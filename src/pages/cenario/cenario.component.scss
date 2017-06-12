@@ -1,7 +1,7 @@
 .letra{
     max-height: 80px;
     max-width: 60px;
-    margin: 18px 0;
+    margin: 0 0 18px 0;
     background: transparent;
 }
 .letra-vagao{
@@ -27,7 +27,8 @@ button{
     background-image: url('../assets/img/vagao.png');
     background-repeat: no-repeat;
 	background-size: 110px 120px;
-    display: inline-block;
+    // display: inline-block;
+    display: table-cell !important;
 	// margin-left: 0px;
     width: 110px;
     height: 120px;

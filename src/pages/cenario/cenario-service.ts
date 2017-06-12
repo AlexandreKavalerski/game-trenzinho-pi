@@ -20,10 +20,10 @@ export class CenariosService {
             "praia-tubarao.jpg",
             new Palavra("COCO", 
                 [
-                    new Letra("C", "C.png", "c.mp3", 3),
                     new Letra("O", "O.png", "o.mp3", 15),
                     new Letra("C", "C.png", "c.mp3", 3),
-                    new Letra("O", "O.png", "o.mp3", 15)
+                    new Letra("O", "O.png", "o.mp3", 15),
+                    new Letra("C", "C.png", "c.mp3", 3)                    
                 ],
                 "coco.png",
                 "coco.mp3",
@@ -33,8 +33,7 @@ export class CenariosService {
                 new Letra("X", "X.png", "x.mp3", 24),
                 new Letra("B", "B.png", "b.mp3", 2),
                 new Letra("A", "A.png", "a.mp3", 1),
-                new Letra("P", "P.png", "p.mp3", 16),
-                new Letra("L", "L.png", "l.mp3", 12)
+                new Letra("P", "P.png", "p.mp3", 16)
             ],
             1
             ),

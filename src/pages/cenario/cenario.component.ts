@@ -50,12 +50,11 @@ export class CenarioPage {
 
             // let vagaoLetra = document.querySelector("#vagao1-" + valor[1].id);
 
-            document.querySelector("#"+valor[1].id).classList.remove("letra");
-            document.querySelector("#"+valor[1].id).classList.add("letra-vagao");
-            
-  
 
-        
+
+
+
+
             let letraVagao = valor[2].id.split("vagao-")[1];
 
             this.permitido = valor[1].id == letraVagao;
@@ -64,6 +63,8 @@ export class CenarioPage {
 
             if (this.permitido) {
                 // console.log(vagaoLetra.querySelector("#" + valor[1].id));
+                document.querySelector("#" + valor[1].id).classList.remove("letra");
+                document.querySelector("#" + valor[1].id).classList.add("letra-vagao");
                 this.corretos.push(valor[1]);
                 this.alertCtrl.create({
                     title: "Letra correta!",
@@ -79,6 +80,10 @@ export class CenarioPage {
                         subTitle: "Tente novamente!",
                         buttons: ["OK"]
                     }).present();
+                }
+                else {
+                    document.querySelector("#" + valor[1].id).classList.remove("letra-vagao");
+                    document.querySelector("#" + valor[1].id).classList.add("letra");
                 }
             }
 
