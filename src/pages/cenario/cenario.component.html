@@ -1,8 +1,9 @@
 <ion-content *ngIf="cenario && corretos.length != cenario.palavra.letrasInOrdem.length" [ngStyle]="{'background-image': 'url(assets/img/' + cenario.imgCenario + ')', 'background-repeat':'no-repeat', 'background-position':'center'}">
 
   <div id="letras">
-    <img [src]="'assets/img/' + cenario.palavra.imgPalavra" [ngStyle]="{'max-width': '65px', 'max-height': '65px', 'display':'inline'}" />
-    <div *ngIf="letrasCenario" [dragula]="'bloco'" [dragulaModel]="letrasCenario" [ngStyle]="{'display':'inline'}">
+    <img [src]="'assets/img/' + cenario.palavra.imgPalavra" [ngStyle]="{'max-width': '65px', 'max-height': '65px', 'display':'inline'}"
+    />
+    <div id="bloco-letras" *ngIf="letrasCenario" [dragula]="'bloco'" [dragulaModel]="letrasCenario" [ngStyle]="{'display':'inline'}">
       <button class="letra" [id]="letra.letra" *ngFor="let letra of letrasCenario" detail-none>
       <img class="img-letra" [src]="'assets/img/letras/' + letra.imgLetra"/>
     </button>
@@ -12,10 +13,9 @@
 
   <!--<div *ngFor="let letra of cenario.palavra.letrasInOrdem" [id]="'vagao-' + letra.letra" class="vagoes" [dragula]="'bloco'"></div>-->
 
-  <!--<div id="trenzinho" [ngStyle]="{'background-image': 'url(assets/img/tre.png)', 'background-repeat':'no-repeat', 'background-position':'center', 'background-size': '398px',
-    'background-position-y': '45px'}">
+  <div id="trenzinho" [ngStyle]="{'background-image': 'url(assets/img/trenzinho-pi.png)', 'background-repeat':'no-repeat', 'background-size': '134px 116px', 'width':'132px', 'display':'table-cell'}">
 
-  </div>-->
+  </div>
 
   <div id="vagao-C" class="vagoes" [dragula]="'bloco'">
 

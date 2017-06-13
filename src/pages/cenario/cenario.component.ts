@@ -54,8 +54,8 @@ export class CenarioPage {
                 }).present();
             }
             else {
-                if (valor[2].id != "letras") {
-
+                console.log(valor[2]);
+                if (valor[2].id != "bloco-letras") {
                     this.alertCtrl.create({
                         title: "Letra incorreta!",
                         subTitle: "Tente novamente!",
