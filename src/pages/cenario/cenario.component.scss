@@ -1,7 +1,6 @@
 .letra{
     max-height: 80px;
     max-width: 60px;
-    margin: 0 0 18px 0;
     background: transparent;
 }
 .letra-vagao{
@@ -33,11 +32,12 @@ button{
     width: 110px;
     height: 120px;
     padding-left: 25px;
+    bottom: 0px;
     
 }
 #letras+div{
     margin-left: 60px !important;
 }
 #letras{
-    margin: 60px auto 0 30px;
+    margin: 15px auto 105px 10px;
 }

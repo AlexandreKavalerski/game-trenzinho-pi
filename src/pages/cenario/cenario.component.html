@@ -1,15 +1,21 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title *ngIf="cenario">{{cenario.titulo}}</ion-title>
-  </ion-navbar>
-</ion-header>
-<ion-content *ngIf="cenario" [ngStyle]="{'background-image': 'url(assets/img/' + cenario.imgCenario + ')', 'background-repeat':'no-repeat', 'background-position':'center'}">
+<ion-content *ngIf="cenario && corretos.length != cenario.palavra.letrasInOrdem.length" [ngStyle]="{'background-image': 'url(assets/img/' + cenario.imgCenario + ')', 'background-repeat':'no-repeat', 'background-position':'center'}">
 
-  <div id="letras" *ngIf="letrasCenario" [dragula]="'bloco'" [dragulaModel]="letrasCenario">
-    <button class="letra" [id]="letra.letra" *ngFor="let letra of letrasCenario" detail-none>
+  <div id="letras">
+    <img [src]="'assets/img/' + cenario.palavra.imgPalavra" [ngStyle]="{'max-width': '65px', 'max-height': '65px', 'display':'inline'}" />
+    <div *ngIf="letrasCenario" [dragula]="'bloco'" [dragulaModel]="letrasCenario" [ngStyle]="{'display':'inline'}">
+      <button class="letra" [id]="letra.letra" *ngFor="let letra of letrasCenario" detail-none>
       <img class="img-letra" [src]="'assets/img/letras/' + letra.imgLetra"/>
     </button>
+    </div>
   </div>
+
+
+  <!--<div *ngFor="let letra of cenario.palavra.letrasInOrdem" [id]="'vagao-' + letra.letra" class="vagoes" [dragula]="'bloco'"></div>-->
+
+  <!--<div id="trenzinho" [ngStyle]="{'background-image': 'url(assets/img/tre.png)', 'background-repeat':'no-repeat', 'background-position':'center', 'background-size': '398px',
+    'background-position-y': '45px'}">
+
+  </div>-->
 
   <div id="vagao-C" class="vagoes" [dragula]="'bloco'">
 
@@ -23,7 +29,7 @@
   <div id="vagao-O" class="vagoes" [dragula]="'bloco'">
 
   </div>
-
-
 
 </ion-content>
+
+<creditos *ngIf="cenario && corretos.length == cenario.palavra.letrasInOrdem.length"></creditos>

@@ -25,12 +25,18 @@ export class CenariosService {
                     new Letra("O", "O.png", "o.mp3", 15),
                     new Letra("C", "C.png", "c.mp3", 3)                    
                 ],
+                [
+                    new Letra("C", "C.png", "c.mp3", 3),
+                    new Letra("O", "O.png", "o.mp3", 15),
+                    new Letra("C", "C.png", "c.mp3", 3),                    
+                    new Letra("O", "O.png", "o.mp3", 15),
+                ],
                 "coco.png",
                 "coco.mp3",
                 1),
             [
                 new Letra("G", "G.png", "g.mp3", 7),
-                new Letra("X", "X.png", "x.mp3", 24),
+                //new Letra("X", "X.png", "x.mp3", 24),
                 new Letra("B", "B.png", "b.mp3", 2),
                 new Letra("A", "A.png", "a.mp3", 1),
                 new Letra("P", "P.png", "p.mp3", 16)
@@ -43,6 +49,14 @@ export class CenariosService {
             "dona-gata.png",
             "casa-gata.png",
             new Palavra("BANANA", 
+                [
+                    new Letra("A", "A.png", "a.mp3", 1),
+                    new Letra("N", "N.png", "n.mp3", 14),
+                    new Letra("B", "B.png", "b.mp3", 2),
+                    new Letra("A", "A.png", "a.mp3", 1),
+                    new Letra("A", "A.png", "a.mp3", 1),
+                    new Letra("N", "N.png", "n.mp3", 14),
+                ],
                 [
                     new Letra("B", "B.png", "b.mp3", 2),
                     new Letra("A", "A.png", "a.mp3", 1),

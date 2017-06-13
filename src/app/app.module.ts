@@ -12,6 +12,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { GamePage } from '../pages/game/game.component';
 import { CenarioPage } from '../pages/cenario/cenario.component';
+import { CreditosComponent } from '../pages/creditos/creditos.component';
 
 import { CenariosService } from '../pages/cenario/cenario-service';
 
@@ -21,7 +22,8 @@ import { CenariosService } from '../pages/cenario/cenario-service';
     HomePage,
     ListPage,
     GamePage,
-    CenarioPage
+    CenarioPage,
+    CreditosComponent
   ],
   imports: [
     BrowserModule,

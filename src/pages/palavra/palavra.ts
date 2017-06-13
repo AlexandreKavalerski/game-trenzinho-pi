@@ -2,13 +2,15 @@ import { Letra } from '../letra/letra';
 export class Palavra {
     public id: number;
     public nome: string;
-    public letras: Letra[];
+    public letrasNotInOrdem: Letra[];
+    public letrasInOrdem: Letra[];
     public imgPalavra: string;
     public somPalavra: string;
 
-    constructor(nome: string, letras: Letra[], imgPalavra: string, somPalavra: string, id?: number) {
+    constructor(nome: string, letrasNotInOrdem: Letra[], letrasInOrdem: Letra[], imgPalavra: string, somPalavra: string, id?: number) {
         this.nome = nome;
-        this.letras = letras;
+        this.letrasNotInOrdem = letrasNotInOrdem;
+        this.letrasInOrdem = letrasInOrdem;
         this.imgPalavra = imgPalavra;
         this.somPalavra = somPalavra;
         if (id) {
