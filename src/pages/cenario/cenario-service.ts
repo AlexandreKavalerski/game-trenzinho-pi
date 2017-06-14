@@ -77,7 +77,43 @@ export class CenariosService {
                 new Letra("L", "L.png", "l.mp3", 12)
             ],
             2
-            )
+            ),
+            new Cenario("Lar do Doutor Cachorro",
+            "Ajude o Doutor Cachorro e leve acerolas para as crianças da vila",
+            "Doutor Cachorro",
+            "doutor-cachorro.png",
+            "hospital-cachorro.png",
+            new Palavra("ACEROLA", 
+                [
+                    new Letra("L", "L.png", "l.mp3", 12),                    
+                    new Letra("A", "A.png", "a.mp3", 1),
+                    new Letra("E", "E.png", "e.mp3", 5),
+                    new Letra("R", "R.png", "r.mp3", 18),
+                    new Letra("C", "C.png", "c.mp3", 3),
+                    new Letra("A", "A.png", "a.mp3", 1),
+                    new Letra("O", "O.png", "o.mp3", 15),
+                ],
+                [
+                    new Letra("A", "A.png", "a.mp3", 1),
+                    new Letra("C", "C.png", "c.mp3", 3),
+                    new Letra("E", "E.png", "e.mp3", 5),
+                    new Letra("R", "R.png", "r.mp3", 18),
+                    new Letra("O", "O.png", "o.mp3", 15),
+                    new Letra("L", "L.png", "l.mp3", 12),                    
+                    new Letra("A", "A.png", "a.mp3", 1),
+                ],
+                "coco.png",
+                "coco.mp3",
+                1),
+            [
+                new Letra("G", "G.png", "g.mp3", 7),
+                //new Letra("X", "X.png", "x.mp3", 24),
+                new Letra("B", "B.png", "b.mp3", 2),
+                new Letra("A", "A.png", "a.mp3", 1),
+                new Letra("P", "P.png", "p.mp3", 16)
+            ],
+            3
+            ),
             
         ];
         return this.cenarios;

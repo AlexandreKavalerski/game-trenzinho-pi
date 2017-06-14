@@ -1,4 +1,4 @@
-<ion-content *ngIf="cenario && corretos.length != cenario.palavra.letrasInOrdem.length" [ngStyle]="{'background-image': 'url(assets/img/' + cenario.imgCenario + ')', 'background-repeat':'no-repeat', 'background-position':'center'}">
+<ion-content *ngIf="cenario && cenario.id == 1 && corretos.length != cenario.palavra.letrasInOrdem.length" [ngStyle]="{'background-image': 'url(assets/img/' + cenario.imgCenario + ')', 'background-repeat':'no-repeat', 'background-position':'center'}">
 
   <div id="letras">
     <img [src]="'assets/img/' + cenario.palavra.imgPalavra" [ngStyle]="{'max-width': '65px', 'max-height': '65px', 'display':'inline'}"
@@ -33,3 +33,9 @@
 </ion-content>
 
 <creditos *ngIf="cenario && corretos.length == cenario.palavra.letrasInOrdem.length"></creditos>
+
+<div *ngIf="cenario && cenario.id != 1">
+  <h1>Ah não...</h1>
+  <h3>Infelizmente essa fase ainda não está disponível :(</h3>
+  <h4>Aguarde os próximos lançamentos</h4>
+</div>

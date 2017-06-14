@@ -39,11 +39,6 @@ export class CenarioPage {
             this.permitido = valor[1].id == letraVagao;
 
             if (this.permitido) {
-                let teste = document.querySelector("#" + valor[1].id) as HTMLElement;
-                console.log(teste.classList);
-                teste.classList.remove('letra');
-                console.log(teste.classList);
-
                 document.querySelector("#" + valor[1].id).classList.remove("letra");
                 document.querySelector("#" + valor[1].id).classList.add("letra-vagao");
                 this.corretos.push(valor[1]);
@@ -54,7 +49,6 @@ export class CenarioPage {
                 }).present();
             }
             else {
-                console.log(valor[2]);
                 if (valor[2].id != "bloco-letras") {
                     this.alertCtrl.create({
                         title: "Letra incorreta!",
